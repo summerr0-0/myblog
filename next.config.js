@@ -8,11 +8,6 @@ const nextConfig = {
         dangerouslyAllowSVG: true, // SVG 이미지를 허용
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     },
-    exportPathMap: async function (defaultPathMap) {
-        // 기본 경로에서 /og 제거
-        delete defaultPathMap['/og'];
-        return defaultPathMap;
-    },
     reactStrictMode: true, // React의 엄격한 모드 활성화
     swcMinify: true, // SWC 기반 코드 최소화 활성화
 };
