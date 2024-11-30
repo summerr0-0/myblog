@@ -27,8 +27,7 @@ jobs:
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
-          source_dir: ./out # 빌드 결과물 디렉토리만 업로드
-          args: --follow-symlinks --delete --exclude "node_modules/*" --exclude ".git/*"
+          args: ./out --follow-symlinks --delete --exclude "node_modules/*" --exclude ".git/*"
         env:
           AWS_S3_BUCKET: irin-blog
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
