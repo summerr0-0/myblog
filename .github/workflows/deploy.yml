@@ -32,7 +32,7 @@ jobs:
       - name: Copy static assets
         run: |
           mkdir -p ./out/fonts
-          cp ./public/fonts/times-new-roman.otf ./out/fonts/times-new-roman.otf
+          cp ./src/fonts/times-new-roman.otf ./out/fonts/times-new-roman.otf
 
       # S3로 배포
       - name: Deploy to S3
