@@ -1,6 +1,6 @@
 // app/blog/page.tsx (서버 컴포넌트)
 
-import { getAllBlogPosts, Post } from "@/lib/markdown";
+import { getAllBlogPosts } from "@/lib/markdown";
 import BlogList from "@/components/BlogList";
 
 export const metadata = {

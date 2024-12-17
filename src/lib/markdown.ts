@@ -12,7 +12,7 @@ export interface MarkdownData {
     description?: string;
     date?: string;
     category?: string[];
-    [key: string]: any; // 기타 메타데이터
+    [key: string]: unknown; // 기타 메타데이터
 }
 
 // About 페이지용 함수
