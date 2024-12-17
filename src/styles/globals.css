@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("../fonts/times-new-roman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 폰트 적용 */
+body {
+  font-family: "Times New Roman", serif;
+}
