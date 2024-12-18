@@ -2,8 +2,8 @@ import "../styles/globals.css";
 import ConditionalHeader from "@/components/ConditionalHeader";
 
 export const metadata = {
-    title: "My Portfolio",
-    description: "Portfolio site of Rohit Jain",
+    title: "Irin's life",
+    description: "Portfolio site of Jeong Irin",
 };
 
 export default function RootLayout({
