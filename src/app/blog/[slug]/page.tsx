@@ -39,7 +39,7 @@ async function BlogPost({
         <div className="max-w-4xl mx-auto p-8">
             <h1 className="text-3xl font-bold mb-4">{data.title}</h1>
             <p className="text-gray-500 mb-6">{data.date}</p>
-            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            <div className="markdown-content" dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
     );
 }

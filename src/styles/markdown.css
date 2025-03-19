@@ -1,0 +1,258 @@
+/* Markdown Content Styles */
+.markdown-content {
+  color: var(--foreground);
+  background-color: var(--background);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Headings */
+.markdown-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.markdown-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.markdown-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.markdown-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.markdown-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.markdown-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: #6b7280; /* Slightly muted color for h6 */
+}
+
+/* Paragraphs */
+.markdown-content p {
+  margin-bottom: 1.25rem;
+}
+
+/* Lists */
+.markdown-content ul,
+.markdown-content ol {
+  margin-left: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.markdown-content ul {
+  list-style-type: disc;
+}
+
+.markdown-content ol {
+  list-style-type: decimal;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-content li > ul,
+.markdown-content li > ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Nested lists */
+.markdown-content ul ul,
+.markdown-content ol ul {
+  list-style-type: circle;
+}
+
+.markdown-content ul ul ul,
+.markdown-content ol ul ul,
+.markdown-content ol ol ul,
+.markdown-content ul ol ul {
+  list-style-type: square;
+}
+
+/* Code */
+.markdown-content code {
+  background-color: #f3f4f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+  color: #d946ef; /* A purple color for inline code */
+}
+
+.markdown-content pre {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.markdown-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: var(--foreground); /* Reset color for code blocks */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Blockquotes */
+.markdown-content blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.25rem;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.markdown-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Horizontal Rule */
+.markdown-content hr {
+  border: 0;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Links */
+.markdown-content a {
+  color: #3b82f6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.markdown-content a:hover {
+  color: #2563eb;
+}
+
+/* Tables */
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  display: block;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.markdown-content table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.markdown-content table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* Images */
+.markdown-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+/* Figures with captions */
+.markdown-content figure {
+  margin: 1.5rem 0;
+}
+
+.markdown-content figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .markdown-content code {
+    background-color: #1f2937;
+  }
+  
+  .markdown-content pre {
+    background-color: #1f2937;
+  }
+  
+  .markdown-content blockquote {
+    border-left-color: #4b5563;
+    color: #9ca3af;
+  }
+  
+  .markdown-content hr {
+    background-color: #4b5563;
+  }
+  
+  .markdown-content a {
+    color: #60a5fa;
+  }
+  
+  .markdown-content a:hover {
+    color: #93c5fd;
+  }
+  
+  .markdown-content table th,
+  .markdown-content table td {
+    border-color: #4b5563;
+  }
+  
+  .markdown-content table th {
+    background-color: #374151;
+  }
+  
+  .markdown-content table tr:nth-child(even) {
+    background-color: #1f2937;
+  }
+  
+  .markdown-content figcaption {
+    color: #9ca3af;
+  }
+}
+

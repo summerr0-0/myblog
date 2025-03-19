@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import ConditionalHeader from "@/components/ConditionalHeader";
+import "../styles/markdown.css";
 
 export const metadata = {
     title: "Irin's life",
