@@ -14,15 +14,46 @@
   }
 }
 
+/* EB Garamond Variable Font (Regular + Italic) */
 @font-face {
-  font-family: "Times New Roman";
-  src: url("../fonts/times-new-roman.otf") format("opentype");
-  font-weight: normal;
+  font-family: "EB Garamond";
+  src: url("/fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700; /* 가령 EB Garamond가 100~700 지원한다고 가정 */
   font-style: normal;
 }
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/EBGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 700;
+  font-style: italic;
+}
 
-/* 기본 폰트 적용 */
+/* Noto Sans Variable Font (Regular + Italic) */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/fonts/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900; /* Noto Sans가 100~900 까지 지원한다면 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+
+/* 본문(Body) = EB Garamond(세리프) */
 body {
-  font-family: "Times New Roman", serif;
-  letter-spacing: 0.05em;
+  font-family: "EB Garamond", serif;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+/* 제목(Heading) = Noto Sans(산세리프) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700; /* 가령 굵게 */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }

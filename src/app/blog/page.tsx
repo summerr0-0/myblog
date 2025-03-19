@@ -13,7 +13,7 @@ export default async function BlogPage() {
 
     return (
         <div className="min-h-screen p-8 max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-6">Blog</h1>
+            <p className="text-4xl font-bold mb-6">Blog</p>
             <BlogList posts={allPosts} />
         </div>
     );

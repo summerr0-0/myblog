@@ -1,6 +1,6 @@
 ---
-title: "Jeong Irin"
-description: "Hello, I'm Irin."
+
+title: "Hello, I'm Irin."
 ---
 
 Hi there! I'm Jeong Irin, a passionate Backend Developer with a non-traditional background in Library and Information Science. 
@@ -14,7 +14,12 @@ Currently, I'm working at PurpleI/O, where I handle a part of the backend develo
 I love diving deep into coding challenges and continuously learning new technologies.
 
 ### Tech Stack
-* Languages: Java, Kotlin, JavaScript
-* Frameworks: Spring Boot, NestJS
-* Libraries: React
-* Tools: Git, Docker , MySQL
+
+- Languages: Java, Kotlin, TypeScript, JavaScript 
+- Frameworks: Spring Boot, NestJS, Next.js 
+- Libraries: React, Tailwind CSS 
+- Tools: Git, Docker, MySQL 
+
+### Contact
+* [Linked in](https://www.linkedin.com/in/irin-jeong-77a762288/)  
+* [Github](https://github.com/summerr0-0)

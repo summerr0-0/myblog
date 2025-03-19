@@ -5,7 +5,7 @@ export default function Home() {
         <main className="flex flex-col items-center justify-center min-h-screen bg-white text-gray-900">
             {/* 타이틀 섹션 */}
             <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold">I am Jeong Irin</h1>
+                <p className="text-4xl md:text-5xl font-bold">I am Jeong Irin</p>
             </div>
 
             {/* 메인 콘텐츠 섹션 */}
@@ -15,7 +15,7 @@ export default function Home() {
                     <div className="text-right">
                         <p>JAVA</p>
                         <p>KOTLIN</p>
-                        <p>JAVA SCRIPT</p>
+                        <p>TYPE SCRIPT</p>
                     </div>
                 </div>
 

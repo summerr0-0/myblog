@@ -17,10 +17,15 @@ export default function BlogList({ posts }: BlogListProps) {
         new Set(posts.flatMap((post) => post.category || []))
     );
 
-    // 카테고리 필터링
+    // // 카테고리 필터링
     const filteredPosts = selectedCategory
         ? posts.filter((post) => post.category?.includes(selectedCategory))
         : posts;
+
+    const sortedPosts = [...filteredPosts].sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+
 
     return (
         <div>
@@ -43,7 +48,8 @@ export default function BlogList({ posts }: BlogListProps) {
             </div>
 
             {/* 블로그 포스트 리스트 */}
-            {filteredPosts.map((post) => (
+            {sortedPosts.map((post) => (
+
                 <div key={post.slug} className="mb-8">
                     <h2 className="text-2xl font-bold">
                         <Link href={`/blog/${post.slug}`} className="hover:underline">
@@ -55,7 +61,7 @@ export default function BlogList({ posts }: BlogListProps) {
             ))}
 
             {/* 포스트가 없을 때 */}
-            {filteredPosts.length === 0 && (
+            {sortedPosts.length === 0 && (
                 <p className="text-gray-500">No posts found for this category.</p>
             )}
         </div>
