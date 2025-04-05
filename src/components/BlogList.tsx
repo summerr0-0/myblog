@@ -51,11 +51,11 @@ export default function BlogList({ posts }: BlogListProps) {
             {sortedPosts.map((post) => (
 
                 <div key={post.slug} className="mb-8">
-                    <h2 className="text-2xl font-bold">
-                        <Link href={`/blog/${post.slug}`} className="hover:underline">
+                    <span className="text-2xl font-bold">
+                        <a href={`/blog/${post.slug}`} className="hover:underline">
                             {post.title}
-                        </Link>
-                    </h2>
+                        </a>
+                    </span>
                     <p className="text-gray-500">{post.date}</p>
                 </div>
             ))}

@@ -25,9 +25,9 @@ export default function Home() {
                 {/* 오른쪽 네비게이션 */}
                 <div className="flex-1 flex justify-start text-xl">
                     <nav className="space-y-2">
-                        <Link href="/about" className="block hover:underline">About</Link>
-                        <Link href="/blog" className="block hover:underline">Blog</Link>
-                        <Link href="/resume" className="block hover:underline">Resume</Link>
+                        <a href="/about" className="block hover:underline">About</a>
+                        <a href="/blog" className="block hover:underline">Blog</a>
+                        <a href="/irin.pdf" download className="hover:underline">Resume</a>
                     </nav>
                 </div>
             </div>
