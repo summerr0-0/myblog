@@ -63,7 +63,7 @@ export default function BlogList({ posts }: BlogListProps) {
             {/* 포스트가 없을 때 */}
             {sortedPosts.length === 0 && (
                 <p className="text-gray-500">No posts found for this category.</p>
-            )}
+            )}aerasdffasdfasdf
         </div>
     );
 }
