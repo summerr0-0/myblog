@@ -52,9 +52,9 @@ export default function BlogList({ posts }: BlogListProps) {
 
                 <div key={post.slug} className="mb-8">
                     <span className="text-2xl font-bold">
-                        <a href={`/blog/${post.slug}`} className="hover:underline">
+                        <Link href={`/blog/${post.slug}`} className="hover:underline">
                             {post.title}
-                        </a>
+                        </Link>
                     </span>
                     <p className="text-gray-500">{post.date}</p>
                 </div>
